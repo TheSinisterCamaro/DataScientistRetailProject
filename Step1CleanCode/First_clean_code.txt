@@ -1,0 +1,50 @@
+import pandas as pd
+
+# Define the file path
+file_path = r'C:\Users\jdick\source\repos\DataScientistRetailProject\online_retail_II.csv'
+
+try:
+    # Load the CSV file
+    data = pd.read_csv(file_path)
+
+    # Display the first few rows to ensure it loaded correctly
+    print("First 5 rows of the data:")
+    print(data.head())
+
+    # Check the structure of the DataFrame
+    print("\nDataFrame structure:")
+    print(data.info())
+
+    # Check for missing values in each column
+    missing_values = data.isnull().sum()
+    print("\nMissing values in each column:")
+    print(missing_values)
+
+    # Convert 'Quantity' to numeric, coercing errors to NaN
+    data['Quantity'] = pd.to_numeric(data['Quantity'], errors='coerce')
+
+    # Convert 'Price' to numeric, coercing errors to NaN
+    data['Price'] = pd.to_numeric(data['Price'], errors='coerce')
+
+    # Display any rows where conversion failed
+    print("\nRows with invalid 'Quantity' or 'Price':")
+    print(data[data['Quantity'].isnull() | data['Price'].isnull()])
+
+    # Optionally, drop rows with invalid 'Quantity' or 'Price'
+    data_cleaned = data.dropna(subset=['Quantity', 'Price'])
+
+    # Check the structure of the cleaned DataFrame
+    print("\nCleaned DataFrame structure:")
+    print(data_cleaned.info())
+
+    # Display the first few rows of the cleaned data
+    print("\nFirst 5 rows of the cleaned data:")
+    print(data_cleaned.head())
+
+    # Save the cleaned data to a new CSV file
+    data_cleaned.to_csv(r'C:\Users\jdick\source\repos\DataScientistRetailProject\cleaned_online_retail_II.csv', index=False)
+
+    print("\nCleaned data saved successfully!")
+
+except Exception as e:
+    print(f"An error occurred: {e}")
