@@ -4,7 +4,7 @@ from statsmodels.tsa.arima.model import ARIMA
 import matplotlib.pyplot as plt
 
 # Load the final cleaned data
-file_path = r'C:\Users\jdick\source\repos\DataScientistRetailProject\final_online_retail_II.csv'
+file_path = r'C:\File\Path\Here\final_online_retail_II.csv' # Add your file path to the data you want to use.
 data = pd.read_csv(file_path, dtype={'Invoice': str})
 
 # Convert InvoiceDate to datetime format

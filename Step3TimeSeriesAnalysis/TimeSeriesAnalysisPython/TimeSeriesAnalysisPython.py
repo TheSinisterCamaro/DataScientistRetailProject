@@ -1,12 +1,13 @@
 # The 2 virtualized charts for monthly and quarterly have a random "le6" on the top left.
 # Tried updating matplot, using seaborn, and even saving them as images to remove the text with no success.
+# Data looks great and charts work fine, but the "le6" on the top left is not clean.
 # Any idea on how to fix?
 
 import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load the final cleaned data with specified data types to avoid DtypeWarning
-file_path = r'C:\Users\jdick\source\repos\DataScientistRetailProject\final_online_retail_II.csv'
+file_path = r'C:\File\Path\Here\final_online_retail_II.csv' # Add your file path to the data you want to use.
 data = pd.read_csv(file_path, dtype={'Invoice': str})
 
 # Convert InvoiceDate to datetime format

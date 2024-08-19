@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load the final cleaned data
-file_path = r'C:\Users\jdick\source\repos\DataScientistRetailProject\final_online_retail_II.csv'
+file_path = r'C:\File\Path\Here\final_online_retail_II.csv' # Add your file path to the data you want to use here
 data = pd.read_csv(file_path)
 
 # Calculate total sales (Quantity * Price)

@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Define the file path
-file_path = r'C:\Users\jdick\source\repos\DataScientistRetailProject\final_online_retail_II.csv'
+file_path = r'C:\File\Path\Here\final_online_retail_II.csv' # Add your file path to the data you want to use here.
 
 # Load the data, specifying dtype for Invoice to avoid DtypeWarning
 data = pd.read_csv(file_path, dtype={'Invoice': str})
@@ -27,5 +27,5 @@ plt.tight_layout()
 plt.show()
 
 # Optionally, save the result to a CSV file for reference
-sales_by_country.to_csv(r'C:\Users\jdick\source\repos\DataScientistRetailProject\sales_by_country.csv')
+sales_by_country.to_csv(r'C:\File\Path\Here\sales_by_country.csv') # Add file path to where you want your .CSV file stored.
 
