@@ -64,12 +64,12 @@ Expected Outcomes
 
 How to Use This Project
 1. Clone the Repository
-git clone https://github.com/yourusername/ecommerce-sales-analysis.git
-cd ecommerce-sales-analysis
+- git clone https://github.com/yourusername/ecommerce-sales-analysis.git
+- cd ecommerce-sales-analysis
 
 2. Set Up the Environment
-Install the required Python packages using:
-pip install -r requirements.txt
+- Install the required Python packages using:
+- pip install -r requirements.txt
 
 3. Run the Analysis
 - Follow the code and instructions provided to replicate the analysis, explore the data, and generate insights.
