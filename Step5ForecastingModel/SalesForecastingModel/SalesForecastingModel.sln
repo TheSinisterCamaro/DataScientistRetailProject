@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "SalesForecastingModel", "SalesForecastingModel.pyproj", "{68A0FA89-569A-4E67-91B5-5CADD777BF81}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "ExponentialSmoothing", "..\ExponentialSmoothing\ExponentialSmoothing.pyproj", "{08BBFE11-FE60-4586-8F20-76769C908925}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68A0FA89-569A-4E67-91B5-5CADD777BF81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68A0FA89-569A-4E67-91B5-5CADD777BF81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08BBFE11-FE60-4586-8F20-76769C908925}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08BBFE11-FE60-4586-8F20-76769C908925}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F75721CA-9719-4765-9359-0D3152C6A00B}
+	EndGlobalSection
+EndGlobal
